@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="MS" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AUI - lab. 7</title>
+		<link rel="stylesheet" href="/css/w3.css">
+		<link rel="stylesheet" href="/css/my.css">
+		<script type="module" src="/js/load.js" defer="defer"></script>
+	</head>
+
+	<body class="w3-sand">
+		<div class="w3-card-4 w3-margin w3-khaki">
+			<div id="nav"></div>
+			<div class="w3-container w3-padding-16">
+				<strong>Laboratory 7</strong><br>
+				<strong>Advanced services deployment</strong>
+				<p>
+					During laboratories students should get familiar with detailed concepts of deploying
+					the web application to the servers based on containerization approach with load balancers.
+				</p>
+				<p>The following tasks must be completed:</p>
+				<ol>
+					<li>
+						(1 point) You should use the Spring Boot project from Lab 6 as API Layer.
+						Moreover you should create new Spring Boot application (GUI) with Upload Form (View)
+						for uploading the files and additional View to present the list of uploaded files.
+						New application (GUI) should send all received information to the API layer
+						(app created during Lab 6) in order to perform business logic.
+					</li>
+					<li>
+						(1 point) All Spring Boot projects should be packaged into the JAR file
+						and the process of deployment for each of it should be described using
+						dedicated Dockerfile (place it in different folder).
+					</li>
+					<li>
+						(2 point) In this laboratory you will extend your composition by additional
+						proxy layer - Load Balancers. First Load Balancer will offer GUI functionality
+						for the external users and the second Load Balancer will offer API functionality
+						only for the GUI apps. You should create two additional Dockerfile
+						(with configuration for HA Proxy or NGinx) in order to offer needed functionality.
+						In your composition your should concern usage of at least two GUI containers
+						and two API containers.
+					</li>
+					<li>
+						(2 points) Finally please create the final services composition using
+						the docker-compose.yml file. Final version of the composition should offer
+						all functionality presented in the Fig. 1. GUI containers and API containers
+						should be launched in two separated networks: public network (for GUI apps)
+						and private network (for API apps and DB server). API apps should store uploaded
+						files in the special volume folder - similar to the laboratory 6.
+					</li>
+				</ol>
+				<p>
+					Attention: Final solution should be submitted in the zip format with correct folder
+					structure, docker-compose.yml, required Dockerfiles, empty upload dir, JAR file with GUI application
+					and JAR file with API, all elements placed in right directory.
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

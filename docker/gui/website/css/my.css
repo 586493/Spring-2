@@ -1,0 +1,60 @@
+body {
+    font-size: medium;
+}
+
+p, ol > li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.icon, .icon:hover {
+    color: transparent;
+    text-shadow: 0 0 0 black;
+}
+
+table {
+    width: 95%;
+}
+table, th, td {
+    border: 0;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(1) > th, tr:nth-child(2) > th {
+    background-color: #ff9800;
+}
+
+tfoot > tr > td > button {
+    margin: 16px 4px;
+}
+
+td > button {
+    padding: 4px 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+form input[class^="w3"], form input, form select[class^="w3"], form select {
+    width: 90%;
+    display: inline-block;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+}
+
+form input[type="submit"] {
+    width: 12.5%;
+    display: block;
+}

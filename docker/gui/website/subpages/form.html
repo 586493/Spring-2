@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="MS" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Upload form</title>
+		<link rel="stylesheet" href="/css/w3.css">
+		<link rel="stylesheet" href="/css/my.css">
+		<script type="module" src="/js/load.js" defer="defer"></script>
+		<script type="module" src="/js/upload.js" defer="defer"></script>
+	</head>
+
+	<body class="w3-sand">
+		<div class="w3-card-4 w3-margin w3-khaki">
+			<div id="nav"></div>
+			<div class="w3-container w3-padding-16">
+				<strong>Upload form</strong><br>
+
+				<form class="w3-container w3-margin w3-padding-16" id="form">
+
+					<label for="author">author</label>
+					<input class="w3-input w3-margin w3-border" type="text" id="author" name="author" required>
+
+					<label for="description">description</label>
+					<input class="w3-input w3-margin w3-border" type="text" id="description" name="description"
+						required>
+
+					<div id="fileInputDiv" class="w3-margin-bottom">
+						<label for="file">file</label>
+						<input class="w3-input w3-margin w3-border" id="fileName" type="text" readonly>
+						<input id="file" name="file" type="file" required>
+					</div>
+
+					<div class="w3-margin-top">
+						<input type="submit" value="submit" class="w3-btn w3-orange w3-margin-top">
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</body>
+
+</html>

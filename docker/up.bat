@@ -1,0 +1,1 @@
+docker-compose up --build --detach --scale spring_app_gui=3 --scale spring_app_api=3
